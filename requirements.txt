@@ -1,0 +1,26 @@
+# Core
+pydantic>=2.7,<3
+streamlit>=1.37,<2
+numpy>=1.26,<3
+pandas>=2.2,<3
+scikit-learn>=1.4,<2
+matplotlib>=3.8,<4
+rich>=13,<14
+pytest>=8,<9
+ruff>=0.6,<0.7
+
+
+# Retrieval (I can use either FAISS or Chroma)
+faiss-cpu>=1.7.4
+chromadb>=0.5,<1
+
+
+# Optional: sentence-transformers will pull in torch; skip for now and enable on later if needed
+# sentence-transformers>=2.7,<3
+
+
+# RL env (safe to install now; training libs added later on)
+gymnasium>=0.29,<1
+
+
+# NOTE: Later on I'll add stable-baselines3 + torch in a separate file
